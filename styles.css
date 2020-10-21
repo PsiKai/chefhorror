@@ -196,7 +196,7 @@ a {
 }
 
 .book-text {
-  padding: 0 7%;
+  padding: 0 5%;
   color: #eeeeee;
 }
 
@@ -221,8 +221,15 @@ a {
 }
 
 .right {
-  display: flex;
-  flex-direction: row-reverse;
+  grid-auto-flow: dense;
+}
+
+.right .cover {
+  grid-column: 2;
+}
+
+.right .book-text {
+  grid-column 1;
 }
 
 .button {
