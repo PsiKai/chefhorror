@@ -2,13 +2,13 @@ body {
   margin: 0;
   padding: 0;
   background: #373a40;
-  background-image: url("images/cardboard.png")
+  background-image: url("images/cardboard.png");
 }
 
 h1 {
   color: white;
   font-size: calc(3.6vw + 2rem);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .header {
@@ -54,7 +54,7 @@ h1 {
 
 .header-links li {
   margin: 5px 7px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 .head-links {
@@ -80,7 +80,8 @@ a {
   text-align: right;
 }
 
-.media i, .media-footer i {
+.media i,
+.media-footer i {
   margin: auto 10px;
   font-size: 1rem;
 }
@@ -89,12 +90,14 @@ a {
   margin-top: 5px;
 }
 
-.media i:hover, .media-footer i:hover {
+.media i:hover,
+.media-footer i:hover {
   cursor: pointer;
 }
 
 .image {
   width: 100%;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   box-shadow: 0 0 5px 2px;
@@ -103,25 +106,23 @@ a {
 
 .page-img {
   width: 100%;
+  height: 100%;
   margin-bottom: -10px;
-  max-height: 900px;
+  /* max-height: 900px; */
   object-fit: cover;
 }
 
 .jpg {
-
   filter: grayscale(50%) sepia(10%) blur(2px) brightness(0.5);
   -webkit-filter: blur(2px) grayscale(50%) sepia(10%) brightness(0.5);
 }
 
 .ramen {
-
   filter: brightness(0.5) saturate(2);
   -webkit-filter: brightness(0.5) saturate(2);
 }
 
 .thumb {
-
   filter: blur(1px) brightness(0.8);
   -webkit-filter: blur(1px) brightness(0.8);
 }
@@ -129,13 +130,12 @@ a {
 .lamb {
   filter: blur(1px) grayscale(50%) brightness(0.5);
   -webkit-filter: blur(1px) grayscale(50%) brightness(0.5);
-
 }
 
 .greeting {
   width: auto;
   font-size: calc(3.6vw + 1rem);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   text-shadow: 2px 2px #373a40;
   color: white;
   position: absolute;
@@ -174,7 +174,6 @@ a {
   left: -100px;
   bottom: 400px;
   height: 30vw;
-
 }
 
 .books {
@@ -229,7 +228,7 @@ a {
 }
 
 .right .book-text {
-  grid-column 1;
+  grid-column: 1;
 }
 
 .button {
@@ -270,7 +269,6 @@ a {
   margin-right: 15%;
 }
 
-
 /* REcipes */
 
 .notecard {
@@ -281,18 +279,18 @@ a {
   height: 300px;
   position: relative;
   margin: 50px;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: "Gloria Hallelujah", cursive;
   box-shadow: 0 0 10px 1px;
 }
 
 .notecard-lines {
   background-image: url("./images/textured-paper.png"),
-   repeating-linear-gradient(#fff4b0 0, #fff4b0 24px, blue 25px);
+    repeating-linear-gradient(#fff4b0 0, #fff4b0 24px, blue 25px);
   height: 260px;
 }
 
 .notecard h3 {
-  font-family: 'Rock Salt', cursive;
+  font-family: "Rock Salt", cursive;
   font-size: calc(1vw + 1rem);
   margin: 0 0 -25px;
   padding-top: 5px;
@@ -358,7 +356,6 @@ a {
   text-align: center;
   display: grid;
   grid-template-rows: 1fr;
-
 }
 
 .media-footer {
@@ -378,13 +375,12 @@ a {
 
 .footer-links li {
   margin: 5px 7px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 /* Media Query Tablet */
 
 @media (max-width: 950px) {
-
   .header-links {
     /* display: block; */
     position: relative;
@@ -397,15 +393,15 @@ a {
 
   .header-links input {
     display: block;
-     width: 40px;
-     height: 32px;
-     position: absolute;
-     top: -55px;
-     right: 0;
-     cursor: pointer;
-     opacity: 0;
-     z-index: 3;
-     -webkit-touch-callout: none;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -55px;
+    right: 0;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+    -webkit-touch-callout: none;
   }
 
   .checkbox {
@@ -426,9 +422,8 @@ a {
     border-radius: 3px;
     z-index: 2;
     transform-origin: 4px 0px;
-    transition: transform 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
-                background 0.3s cubic-bezier(0.77,0.2,0.05,1.0),
-                opacity 0.55s ease;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
   .header-links span:first-child {
@@ -441,8 +436,8 @@ a {
 
   .header-links input:checked ~ .checkbox span {
     opacity: 1;
-     transform: rotate(-45deg) translate(-3px, -1px);
-     background: #eeeeee;
+    transform: rotate(-45deg) translate(-3px, -1px);
+    background: #eeeeee;
   }
 
   .header-links input:checked ~ .checkbox span:nth-last-child(2) {
@@ -467,22 +462,22 @@ a {
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(0%, -100%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    -webkit-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
-    -moz-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
-    -ms-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
-    -o-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -moz-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -ms-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   .header-links input:checked ~ .menu {
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(0%, 100%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    -webkit-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
-    -moz-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
-    -ms-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
-    -o-transition: transform 0.4s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -webkit-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -moz-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -ms-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -o-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   .menu li {
@@ -493,6 +488,10 @@ a {
 
   .header-links input:checked ~ ul {
     /* transform: none; */
+  }
+
+  .image {
+    height: 60vh;
   }
 
   .site-title {
@@ -514,8 +513,10 @@ a {
     max-width: 80vw;
   }
 
-  .r-card, .l-card, .m-card, .b-card {
-
+  .r-card,
+  .l-card,
+  .m-card,
+  .b-card {
     margin: 5% auto;
     transform: rotate(0deg);
   }
@@ -523,12 +524,15 @@ a {
 
 /* MEDIA QUERY SMALL */
 
-@media (max-width: 750px){
+@media (max-width: 750px) {
   .header {
     padding: 15px 25px;
   }
 
-  .story, .left, .rite, .middle {
+  .story,
+  .left,
+  .rite,
+  .middle {
     margin: 5% auto;
     max-width: 450px;
   }
