@@ -13,7 +13,7 @@ This site is for chef-author Tyler Burton, who writes short horror stories about
 
 I would have loved to add more features and complexity, but the client is extremely happy with the the end result, and does not wish to add any more features or content at this time.
 
-### Description
+## Description
 
 The site's purpose is to create a theme-space for potential buyers to get a glimpse of the author's background and writing style to help produce more sales of his books.
 
