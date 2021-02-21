@@ -175,7 +175,7 @@ a {
 .content-body {
   background: #373a40;
   background-image: url("images/broken-noise.png");
-  padding: 50px 0;
+  padding: 50px 0 0;
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
@@ -225,16 +225,19 @@ a {
 .book-text {
   padding: 0 5%;
   color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .book-text h2 {
-  font-size: calc(1.6vw + 2rem);
+  font-size: calc(1.6vw + 1.5rem);
 }
 
 .book-text p {
   letter-spacing: 0.5px;
-  font-size: calc(0.5vw + 1rem);
-  margin: 0.5em;
+  font-size: calc(0.4vw + 1rem);
+  margin: 0.25rem;
 }
 
 .top-text {
@@ -265,12 +268,13 @@ a {
   display: inline-block;
   margin: 25px auto 0;
   padding: 3% 5%;
-  transition: 300ms;
+  transition: all 200ms ease;
   box-shadow: 0 0 4px 1px black;
 }
-
+/* #212121 */
 .button:hover {
-  background-color: #212121;
+  background-color: #373a40;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.8);
 }
 
 /* Story */
@@ -363,7 +367,7 @@ a {
 }
 
 .recipe-line {
-  width: 75%;
+  width: 85%;
   color: #eeeeee;
   margin-bottom: 50px;
   z-index: 2;
@@ -491,10 +495,6 @@ a {
     transform-origin: 0% 0%;
     transform: translate(0%, -100%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -webkit-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -moz-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -ms-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -o-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   .header-links input:checked ~ .menu {
@@ -502,10 +502,6 @@ a {
     transform-origin: 0% 0%;
     transform: translate(0%, 100%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -webkit-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -moz-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -ms-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
-    -o-transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
 
   .menu li {
@@ -523,7 +519,7 @@ a {
   }
 
   .blood {
-    width: 100%;
+    width: 80%;
     left: 0;
   }
 
@@ -585,15 +581,16 @@ a {
 
   .cover {
     width: 60vw;
+    max-height: 60vh;
   }
 
   .book-text p {
-    margin: 0.5em;
+    margin: 0.25rem;
   }
 
   .book-text h2 {
-    margin-bottom: 0.2em;
-    margin-top: 0.4em;
+    margin-bottom: 0.2rem;
+    /* margin-top: 0.4rem; */
   }
 
   .top-pad {
